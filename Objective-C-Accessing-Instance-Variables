@@ -1,0 +1,34 @@
+#import <Foundation/Foundation.h>
+
+//Interface
+@interface Person:  NSObject{
+  int age;
+  int weight;
+}
+
+-(void) print;
+-(int) setAge: (int) a;
+-(int) setWeight: (int) w;
+-(int) age;
+-(int) weight;
+@end
+
+//Implementation
+@implementation Person
+-(void) print{
+  NSLog(@"Weight:%i, age:%i", weight, age);
+}
+-(int) setAge: (int) a{
+  age = a;
+}
+-(int) setWeigt: (int) w{
+  weight = w;
+}
+-(int) age{
+  return age;
+}
+-(int) weight{
+  return weight;
+}
+@end
+
